@@ -1,0 +1,123 @@
+/* Global Styles */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Styles */
+header {
+    background: url('pictures/tokyo_skyline.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 120px 0;
+    position: relative;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    z-index: 2;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    z-index: 2;
+}
+
+/* Trip Links Section */
+#trip-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+    z-index: 2;
+}
+
+.trip-link {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px 40px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    min-width: 150px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.trip-link:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scale(1.05);
+}
+
+.trip-link:active {
+    transform: scale(0.98);
+}
+
+/* Footer Styles 
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
+}
+    */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 100px 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .trip-link {
+        font-size: 1.1rem;
+        padding: 15px 30px;
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Lightbox styles (optional) */
+.bs5-lightbox-modal img {
+    max-width: 100%;
+    height: auto;
+}

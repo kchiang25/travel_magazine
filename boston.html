@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boston Travel - July2024</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #292828;
+        }
+
+        header {
+            background: url('images/swan.jpg') no-repeat center 80%;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 230px 0;
+            font-size: 3rem;
+            font-family: 'Playfair Display', serif;
+            background-attachment: fixed;
+            filter: brightness(1.2); 
+        }
+
+        h1, .subtitle {
+            margin: 0;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        .home-link {
+            display: block;
+            text-align: center;
+            margin-top: 0px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: #040404;
+            padding: 20px 40px;
+            background-color: rgba(255, 255, 255, 255);
+            border-radius: 1px;
+            transition: background-color 0.3s ease;
+        }
+
+        .home-link:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Section for Each Location */
+        .location-section {
+            margin: 50px 10%;
+            padding-bottom: 50px;
+            position: relative;
+        }
+
+        .location-section h2 {
+            font-size: 2.5rem;
+            color: #ff6347;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Full-width Image with Text Overlay */
+        .location-full-image {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .location-full-image h3 {
+            font-size: 2.5rem;
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .location-full-image p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Side-by-Side Layout */
+        .location-side-by-side {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .location-side-by-side img {
+            width: 48%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .location-side-by-side div {
+            width: 48%;
+        }
+
+        .location-side-by-side h3 {
+            font-size: 2rem;
+            color: #ff6347;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .location-side-by-side p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Image Grid Layout for Food Section */
+        .location-food {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+
+        .location-food img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Text Wrap Around Image */
+        .location-text-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+
+        .location-text-wrap img {
+            width: 45%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .location-text-wrap div {
+            width: 50%;
+        }
+
+        .location-text-wrap h3 {
+            font-size: 2rem;
+            color: #ff6347;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .location-text-wrap p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Trip to Boston</h1>
+        <p class="subtitle">July 2024</p>
+    </header>
+
+    <!-- Back to Home Page Link -->
+    <a href="index.html" class="home-link">Back to Home Page</a>
+
+    <!-- Airbnb (Full-width Image with Text Overlay) -->
+    <section class="location-section">
+        <div class="location-full-image" style="background-image: url('images/airbnb.jpg');">
+            <h3>Our Cozy Airbnb</h3>
+            <p>We stayed at a lovely Airbnb in Somerville! </p>
+        </div>
+    </section>
+
+    <!-- Harvard University (Side-by-Side Layout) -->
+    <section class="location-section">
+        <h2>Harvard University</h2>
+        <div class="location-side-by-side">
+            <img src="images/harvard.jpg" alt="Harvard University">
+            <div>
+                <h3>Harvard University</h3>
+                <p>The prestigious Harvard University in Cambridge boasts stunning architecture and rich history. We walked through the Ivy League campus and taking in the peaceful surroundings.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Isabella Stewart Gardner Museum (Text Wrap Around Image) -->
+    <section class="location-section">
+        <h2>Isabella Stewart Gardner Museum</h2>
+        <div class="location-text-wrap">
+            <img src="images/isa-gardner-museum.jpg" alt="Isabella Stewart Gardner Museum">
+            <div>
+                <h3>Isabella Stewart Gardner Museum</h3>
+                <p>This museum is a hidden gem with a rich collection of fine art. The museum itself is a beautiful building with lush gardens that make it a perfect day trip in Boston.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newbury Street (Full-width Image with Text Overlay) -->
+    <section class="location-section">
+        <div class="location-full-image" style="background-image: url('images/newbury2.jpg');">
+            <h3>Newbury Street</h3>
+            <p>Newbury Street is Boston’s premier shopping district. We wandered through the chic boutiques and cafés, soaking in the vibrant atmosphere of the city’s fashion center.</p>
+        </div>
+    </section>
+
+    <!-- Prudential Tower (Side-by-Side Layout) -->
+    <section class="location-section">
+        <h2>Prudential Tower</h2>
+        <div class="location-side-by-side">
+            <img src="images/prudential-tower.jpg" alt="Prudential Tower">
+            <div>
+                <h3>Prudential Tower</h3>
+                <p>One of Boston’s tallest buildings, Prudential Tower offers spectacular views of the city. We enjoyed a scenic trip to the observation deck to take in the panoramic skyline.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ICA (Museum with Text Wrap) -->
+    <section class="location-section">
+        <h2>Institute of Contemporary Art (ICA)</h2>
+        <div class="location-text-wrap">
+            <img src="images/ica-boston.jpg" alt="Institute of Contemporary Art">
+            <img src="images/ica2.jpeg" alt="Institute of Contemporary Art">
+        </div>
+    </section>
+
+    <!-- Rockport (Full-width Image with Text Overlay) -->
+    <section class="location-section">
+        <div class="location-full-image" style="background-image: url('images/rockport1.jpg');">
+            <h3>Rockport</h3>
+            <p>A charming coastal town outside Boston. The streets are lined with colorful buildings, and the harbor views are postcard-perfect. We spent the day exploring the quaint shops and eating fresh seafood.</p>
+        </div>
+    </section>
+
+    <!-- North End (Side-by-Side Layout) -->
+    <section class="location-section">
+        <h2>North End</h2>
+        <div class="location-side-by-side">
+            <img src="images/north1.jpg" alt="North End">
+            <div>
+                <h3>The North End</h3>
+                <p>The North End is Boston’s Little Italy, known for its Italian restaurants and bakeries. We had some tiramisu and tea!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Boston Common (Text Wrap with Images) -->
+    <section class="location-section">
+        <h2>Boston Common</h2>
+        <div class="location-text-wrap">
+            <img src="images/picnic1.jpg" alt="Boston Common">
+            <div>
+                <h3>Boston Common</h3>
+                <p>Boston Common was the perfect place to relax and enjoy nature in the heart of the city. We were having a picnic and the pigeons decided to join us.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food (Grid of 20 Images, No Text) -->
+    <section class="location-section">
+        <h2>Food - A Taste of Boston</h2>
+        <div class="location-food">
+            <img src="images/food1.jpg" alt="Food 1">
+            <img src="images/food2.jpeg" alt="Food 2">
+            <img src="images/food3.jpeg" alt="Food 3">
+            <img src="images/food4.jpeg" alt="Food 4">
+            <img src="images/food5.jpeg" alt="Food 5">
+            <img src="images/food6.jpeg" alt="Food 6">
+            <img src="images/food7.jpeg" alt="Food 7">
+            <img src="images/food8.jpeg" alt="Food 8">
+            <img src="images/food9.jpeg" alt="Food 9">
+            <img src="images/food10.jpeg" alt="Food 10">
+            <img src="images/food11.jpeg" alt="Food 11">
+            <img src="images/food12.jpeg" alt="Food 12">
+            <img src="images/food13.jpeg" alt="Food 13">
+            <img src="images/food14.jpeg" alt="Food 14">
+            <img src="images/food15.jpeg" alt="Food 15">
+            <img src="images/food16.jpeg" alt="Food 16">
+            <img src="images/food17.jpeg" alt="Food 17">
+            <img src="images/food18.jpg" alt="Food 18">
+            <img src="images/food19.jpg" alt="Food 19">
+            <img src="images/picnic2.jpg" alt="Food 20">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Our Boston Adventure</p>
+    </footer>
+
+</body>
+</html>
