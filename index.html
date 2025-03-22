@@ -68,9 +68,23 @@
         }
 
         section {
-        margin-top: 50px;  /* space before explore our destinations*/
-        margin-left: 20px;
-    }
+            margin-top: 0px;
+            margin-left: 20px;
+        }
+
+        .destination-header {
+            display: flex;
+            align-items: center;
+        }
+
+        .destination-header h2 {
+            margin-right: 900px;
+        }
+
+        .destination-header img {
+            width: 150px; /* Adjust the size of the image */
+            margin-bottom: -30px;
+        }
     </style>
 </head>
 <body>
@@ -82,11 +96,12 @@
 
     <!-- Interactive Map Section -->
     <section>
-        <h2>  Explore Our Travel Destinations</h2>
+        <div class="destination-header">
+            <h2>Explore Our Travel Destinations</h2>
+            <img src="snoopy.png" alt="Snoopy Icon">
+        </div>
         <div id="map"></div> <!-- Map Container -->
     </section>
-
-    <section>  </section>
 
     <footer>
         <p>&copy; 2025 Our Travel Magazine</p>
@@ -115,7 +130,7 @@
         L.marker([23.6978, 120.9605]) // Taiwan coordinates
         .addTo(map)
         .bindPopup('<b>Taiwan</b><br><a href="taiwan.html">Visit Taiwan</a>');
-        </script>
+    </script>
 
 </body>
 </html>
